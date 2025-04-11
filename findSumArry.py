@@ -25,11 +25,15 @@ def find_subarray(arr1,given_sum):
             if given_sum == fsum(i,j,arr1):
                 print(f"{tostring(i,j,arr1)} = {given_sum}")
                 TEST = True
+    if(TEST == False):
+        print('-1')
+        return False
+    else:
+        return True
+    
 
-
+"""
 given_sum =int(input("Enter the sum: "))
 arr= [1, 4, 0, 0, 3, 10, 5]
 find_subarray(arr,given_sum)
-
-if(TEST == False):
-    print('-1')
+"""
